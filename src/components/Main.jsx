@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from './cards';
-import quotes from '../../images/quotes.png';
+import quotes from '../images/quotes.png';
 
 function Main() {
   return (

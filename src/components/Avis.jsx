@@ -64,8 +64,8 @@ import { getAllComments } from '../hooks/useFetchQuery';
                 ]
             };
         
-        if (isLoading) return <p className='py-20 text-center'>Loading...</p>;
-        if (isError) return <p className='py-20 text-center'>Il y a eu une erreur lors du chargement des commentaires.</p>;
+        if (isLoading) return <p className='py-20 text-center font-bold'>Loading...</p>;
+        if (isError) return <p className='py-20 text-center font-bold'>Il y a eu une erreur lors du chargement des commentaires.</p>;
 
   return (
     <div className='container mx-auto'>

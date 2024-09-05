@@ -1,8 +1,8 @@
 import React from 'react';
-import profile from '../../images/profile.png';
-import heart from '../../images/heart.png';
-import classeur from '../../images/classeur.png';
-import history from '../../images/history.png';
+import profile from '../images/profile.png';
+import heart from '../images/heart.png';
+import classeur from '../images/classeur.png';
+import history from '../images/history.png';
 
 const Banner1 = ({ activeTab, setActiveTab }) => {
 

@@ -102,7 +102,7 @@ const Navbar = ({handlerOrderPopup, handlerOrder}) => {
                                     }
                         </div>
                     </div>
-                <div className={`backdrop-blur-lg lg:bg-white py-20 lg:py-0 w-[98vw] h-[70vh] lg:w-auto lg:h-auto absolute top-[70px] right-[35%] lg:top-0 lg:right-0 lg:relative flex flex-col lg:flex-row items-center gap-10 lg:gap-32 xl:gap-72 lg:justify-between  ${nav ? 'left-0 top-[70px] transition-all duration-700' : 'left-[-1000px] transition-all duration-700'} lg:left-0`}>
+                <div className={`backdrop-blur-lg lg:bg-white py-20 lg:py-0 w-[98vw] h-[70vh] lg:w-auto lg:h-auto absolute top-[70px] right-[35%] lg:top-0 lg:right-0 lg:relative flex flex-col lg:flex-row items-center gap-10 md:gap-20 lg:gap-32 ${nav ? 'left-0 top-[70px] transition-all duration-700' : 'left-[-1000px] transition-all duration-700'} lg:left-0`}>
                     <div>
                         <ul className='flex flex-col lg:flex-row items-center justify-center'>
                             {

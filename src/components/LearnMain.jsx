@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import quotes from '../../images/quotes.png';
+import quotes from '../images/quotes.png';
 import Button from './Button';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Slider from 'react-slick';
@@ -19,14 +19,6 @@ const LearnMain = () => {
     const isLoading = queries.some(query => query.isLoading);
     const isError = queries.some(query => query.isError);
     const data = queries.map(query => query.data || []);
-
-    if (isLoading) {
-        return <p>Loading...</p>;
-    }
-
-    if (isError) {
-        return <p>Il y a eu une erreur lors du chargement des catégories.</p>;
-    }
 
     const [document, documents, documentss] = data;
 
@@ -61,6 +53,14 @@ const LearnMain = () => {
             },
         ]
     };
+
+    if (isLoading) {
+        return <p className='py-20 text-center font-bold'>Loading...</p>;
+    }
+
+    if (isError) {
+        return <p className='py-20 text-center font-bold'>Il y a eu une erreur lors du chargement des catégories.</p>;
+    }
 
     return (
         <div>

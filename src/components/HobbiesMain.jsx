@@ -1,5 +1,5 @@
 import React from 'react';
-import quotes from '../../images/quotes.png';
+import quotes from '../images/quotes.png';
 
 const HobbiesMain = () => {
 

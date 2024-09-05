@@ -2,6 +2,8 @@ import React from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.css";
+import bg1 from "../images/home1.png";
+import bg2 from "../images/home2.png";
 
 const CardsImg = {
     backgroundImage: 'url(images/back.png)',
@@ -15,12 +17,12 @@ const CardsImg = {
   const Data = [
     {
         id:1,
-        Image:"../../images/home1.png",
+        Image:bg1,
         description: "Tous vos documents à votre portée! Vous trouverez toutes vos ressources favorites."
     },
     {
         id:2,
-        Image:'../../images/home2.png',
+        Image:bg2,
         description: "Notre offre d'enseignement vous permet d'acquérir des connaissances et des compétences essentielles pour réussir dans votre vie professionnelle et personnelle."
     },
   ]
@@ -42,7 +44,7 @@ const Search = () => {
     <div className='relative pt-5 z-[-10]'>
       <Slider {...settings} >
         {Data.map((slide, index) => (
-          <div key={index} className="w-full h-[80vh] relative">
+          <div key={index} className="w-full h-[90vh] relative">
             <div
                 className=" text-white mx-auto  absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-3 sm:px-10 bg-primary filter"
                 style={{ backgroundImage: `url(${slide.Image})`, backgroundPosition: 'center', backgroundSize: 'cover', height:'80vh', width:'100%',}}

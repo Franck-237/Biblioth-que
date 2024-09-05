@@ -38,7 +38,7 @@ const Footer = () => {
   return (
     <div>
         <div className='bg-[#096197] py-7 md:py-12'>
-            <div className='container mx-auto px-5 flex flex-col md:flex-row items-start justify-start md:justify-between md:flex-wrap gap-8'>
+            <div className='container mx-auto px-5 flex flex-row flex-wrap items-start justify-start md:justify-between md:flex-wrap gap-8'>
                 <div className='md:w-1/4'>
                   <div className='pb-5'>
                     <img src={logo} alt="" className='bg-white py-1 px-2 border rounded-full w-[120px] h-auto md:w-auto'/>
